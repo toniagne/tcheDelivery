@@ -156,6 +156,25 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     })
 
+    .state('app.produtos', {
+      url: "/produtos/:prodId",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/social/produto.html",
+        }
+      }
+    })
+
+    .state('app.checkin', {
+      url: "/checkin",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/social/checkin.html",
+        }
+      }
+    })
+
+
     .state('app.invite', {
       url: "/invite",
       views: {
